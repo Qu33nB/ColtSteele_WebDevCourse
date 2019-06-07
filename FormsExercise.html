@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Register</h1>
+
+    <form>
+        <div>
+            <label for="firstName">First Name: </label>
+            <input id="firstName" type="text" placeholder="John" required>
+
+            <label for="lastName">Last Name: </label>
+            <input type="text" id="lastName" placeholder="Smith" required>
+        </div>
+        
+        <div>
+            <label for="gender">Male</label>
+            <input type="radio" id="gender" name="gender" value="male">
+        
+            <label for="gender">Female</label>
+            <input type="radio" id="gender" name="gender" value="female">
+        
+            <label for="gender">Other</label>
+            <input type="radio" id="gender" name="gender" value="other">
+        </div>
+        
+        <div>
+            <label for="email">E-mail: </label>
+            <input id="email" type="email" placeholder="your email" required>
+
+            <label for="password">Password: </label>
+            <input id="password" type="password" placeholder="your password" minlength="5" maxlength="10" required>
+        </div>
+
+        <fieldset>
+            <legend>Birthday:</legend>
+            
+            <label for="month">Month</label>
+            <select name="month" id="month">
+                <option value="0" selected disabled>Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+            </select>
+
+            <label for="day">Day</label>
+            <select name="day" id="day"> 
+                <option value="0" selected disabled>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="year">Year</label>
+            <select name="year" id="year"> 
+                <option value="0" selected disabled>Year</option>
+                <option value="1982">1986</option>
+                <option value="1983">1985</option>
+                <option value="1984">1984</option>
+                <option value="1985">1983</option>
+                <option value="1986">1982</option>
+            </select>
+        </fieldset>
+
+        <div>
+            <label for="checkbox">I agree to the terms and conditions</label>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+        </div>
+          
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</body>
+</html>
